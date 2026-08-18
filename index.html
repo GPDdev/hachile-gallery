@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c9f3ee">
+  <meta name="description" content="Hachile Gallery — a small visual archive.">
+  <title>Hachile Gallery</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar">
+      <a href="https://hachile.org/">← Hachile Identity Hub</a>
+      <span>gallery.hachile.org</span>
+    </nav>
+
+    <header class="hero">
+      <p class="kicker">HACHILE VISUAL ARCHIVE</p>
+      <h1>Gallery</h1>
+      <p>一些照片、截图、梗图、兴趣切片和互联网生活的碎片。</p>
+    </header>
+
+    <section class="gallery" aria-label="Hachile Gallery">
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-01.jpg" aria-label="放大查看第 1 张图片">
+          <img src="./assets/images/gallery-01.jpg" alt="Gallery image 1" loading="lazy">
+        </button>
+        <figcaption>图片说明 01：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-02.jpg" aria-label="放大查看第 2 张图片">
+          <img src="./assets/images/gallery-02.jpg" alt="Gallery image 2" loading="lazy">
+        </button>
+        <figcaption>图片说明 02：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-03.jpg" aria-label="放大查看第 3 张图片">
+          <img src="./assets/images/gallery-03.jpg" alt="Gallery image 3" loading="lazy">
+        </button>
+        <figcaption>图片说明 03：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-04.jpg" aria-label="放大查看第 4 张图片">
+          <img src="./assets/images/gallery-04.jpg" alt="Gallery image 4" loading="lazy">
+        </button>
+        <figcaption>图片说明 04：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-05.jpg" aria-label="放大查看第 5 张图片">
+          <img src="./assets/images/gallery-05.jpg" alt="Gallery image 5" loading="lazy">
+        </button>
+        <figcaption>图片说明 05：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-06.jpg" aria-label="放大查看第 6 张图片">
+          <img src="./assets/images/gallery-06.jpg" alt="Gallery image 6" loading="lazy">
+        </button>
+        <figcaption>图片说明 06：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-07.jpg" aria-label="放大查看第 7 张图片">
+          <img src="./assets/images/gallery-07.jpg" alt="Gallery image 7" loading="lazy">
+        </button>
+        <figcaption>图片说明 07：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+      <figure class="gallery-card">
+        <button class="image-button" type="button" data-full="./assets/images/gallery-08.jpg" aria-label="放大查看第 8 张图片">
+          <img src="./assets/images/gallery-08.jpg" alt="Gallery image 8" loading="lazy">
+        </button>
+        <figcaption>图片说明 08：这里填写这张图片的故事、时间、地点或备注。</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <span>Hachile Gallery · ALPHA</span>
+      <a href="https://hachile.org/">Back to Identity Hub →</a>
+    </footer>
+  </main>
+
+  <dialog id="lightbox">
+    <button id="close-lightbox" type="button" aria-label="关闭">×</button>
+    <img id="lightbox-image" alt="Expanded gallery image">
+  </dialog>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
