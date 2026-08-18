@@ -27,7 +27,7 @@ button { font: inherit; }
 .topbar a { padding: 9px 13px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.46); }
 .hero { padding: 88px 0 42px; max-width: 790px; }
 .kicker { margin: 0 0 10px; color: var(--accent); font-weight: 850; letter-spacing: .18em; font-size: .76rem; }
-.hero h1 { margin: 0; font-size: clamp(2rem, 6vw, 4.5rem); line-height: .88; letter-spacing: -.065em; }
+.hero h1 { margin: 0; font-size: clamp(2rem, 6vw, 4.5rem); line-height: .88; letter-spacing: 0em; }
 .hero p:last-child { margin: 22px 0 0; color: var(--muted); font-size: 1.08rem; line-height: 1.8; }
 .gallery { columns: 3 300px; column-gap: 18px; }
 .gallery-card { break-inside: avoid; margin: 0 0 18px; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.62); box-shadow: 0 16px 48px rgba(43,112,107,.10); }
