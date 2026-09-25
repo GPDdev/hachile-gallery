@@ -60,10 +60,24 @@ const uploads = [
   'mmexport1790173551402.jpg',
 ];
 
-document.querySelector('#uploaded-gallery').innerHTML = uploads.map((name, index) => {
+document.querySelector('#gallery').insertAdjacentHTML('beforeend', uploads.map((name, index) => {
   const src = `./assets/images/pic/${encodeURIComponent(name)}`;
-  return `<figure class="gallery-card"><button class="image-button" type="button" data-full="${src}" aria-label="放大查看新增图片 ${index + 1}"><img src="${src}" alt="${name}" loading="lazy"></button></figure>`;
-}).join('');
+  return `<figure class="gallery-card"><button class="image-button" type="button" data-full="${src}" aria-label="放大查看新增图片 ${index + 1}"><img src="${src}" alt="${name}" loading="lazy"></button><figcaption>文字说明待补充</figcaption></figure>`;
+}).join(''));
+
+const search = document.querySelector('#gallery-search');
+const cards = [...document.querySelectorAll('.gallery-card')];
+search.addEventListener('input', () => {
+  const query = search.value.trim().toLocaleLowerCase();
+  let matches = 0;
+  cards.forEach((card) => {
+    const img = card.querySelector('img');
+    const text = `${card.querySelector('figcaption').textContent} ${img.alt} ${img.getAttribute('src')}`.toLocaleLowerCase();
+    card.hidden = !text.includes(query);
+    if (!card.hidden) matches++;
+  });
+  document.querySelector('#search-empty').hidden = matches > 0;
+});
 
 document.querySelectorAll('.image-button').forEach((button) => {
   button.addEventListener('click', () => {

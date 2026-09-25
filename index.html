@@ -21,7 +21,11 @@
       <p>一些照片、截图、梗图、兴趣切片和互联网生活的碎片。</p>
     </header>
 
-    <section class="gallery" aria-label="Hachile Gallery">
+    <label class="search-label" for="gallery-search">搜索图片</label>
+    <input id="gallery-search" type="search" placeholder="搜索说明或文件名" autocomplete="off">
+    <p id="search-empty" role="status" hidden>没有找到匹配的图片。</p>
+
+    <section class="gallery" id="gallery" aria-label="Hachile Gallery">
       <figure class="gallery-card">
         <button class="image-button" type="button" data-full="./assets/images/gallery-01.jpg" aria-label="放大查看第 1 张图片">
           <img src="./assets/images/gallery-01.jpg" alt="Gallery image 1" loading="lazy">
@@ -76,11 +80,6 @@
         </button>
         <figcaption>音乐生涯个马喜好表（小马音乐）</figcaption>
       </figure>
-    </section>
-
-    <section class="uploads" aria-labelledby="uploads-title">
-      <h2 id="uploads-title">更多图片</h2>
-      <div class="gallery" id="uploaded-gallery"></div>
     </section>
 
     <footer>
